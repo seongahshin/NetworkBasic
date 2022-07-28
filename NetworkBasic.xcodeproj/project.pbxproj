@@ -35,7 +35,7 @@
 		8C8D0C8B2892236C00A315DC /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		8C8D0C8E2892305200A315DC /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		8C8D0C9028923ACB00A315DC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		8CC7F66F2890DD72008047A6 /* SeSac2LectureNetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSac2LectureNetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC7F66F2890DD72008047A6 /* NetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC7F6722890DD72008047A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC7F6742890DD72008047A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CC7F6762890DD72008047A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,17 +78,9 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		8C8D0C8D2892237300A315DC /* Lotto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lotto;
-			sourceTree = "<group>";
-		};
 		8CC7F6662890DD72008047A6 = {
 			isa = PBXGroup;
 			children = (
-				8C8D0C8D2892237300A315DC /* Lotto */,
 				8C8D0C8828920CA400A315DC /* Protocol */,
 				8C8D0C7F28914DDA00A315DC /* practice */,
 				8CC7F6712890DD72008047A6 /* SeSac2LectureNetworkBasic */,
@@ -99,7 +91,7 @@
 		8CC7F6702890DD72008047A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CC7F66F2890DD72008047A6 /* SeSac2LectureNetworkBasic.app */,
+				8CC7F66F2890DD72008047A6 /* NetworkBasic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CC7F66E2890DD72008047A6 /* SeSac2LectureNetworkBasic */ = {
+		8CC7F66E2890DD72008047A6 /* NetworkBasic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CC7F6832890DD74008047A6 /* Build configuration list for PBXNativeTarget "SeSac2LectureNetworkBasic" */;
+			buildConfigurationList = 8CC7F6832890DD74008047A6 /* Build configuration list for PBXNativeTarget "NetworkBasic" */;
 			buildPhases = (
 				8CC7F66B2890DD72008047A6 /* Sources */,
 				8CC7F66C2890DD72008047A6 /* Frameworks */,
@@ -139,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = SeSac2LectureNetworkBasic;
+			name = NetworkBasic;
 			productName = SeSac2LectureNetworkBasic;
-			productReference = 8CC7F66F2890DD72008047A6 /* SeSac2LectureNetworkBasic.app */;
+			productReference = 8CC7F66F2890DD72008047A6 /* NetworkBasic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CC7F66A2890DD72008047A6 /* Build configuration list for PBXProject "SeSac2LectureNetworkBasic" */;
+			buildConfigurationList = 8CC7F66A2890DD72008047A6 /* Build configuration list for PBXProject "NetworkBasic" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CC7F66E2890DD72008047A6 /* SeSac2LectureNetworkBasic */,
+				8CC7F66E2890DD72008047A6 /* NetworkBasic */,
 			);
 		};
 /* End PBXProject section */
@@ -407,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CC7F66A2890DD72008047A6 /* Build configuration list for PBXProject "SeSac2LectureNetworkBasic" */ = {
+		8CC7F66A2890DD72008047A6 /* Build configuration list for PBXProject "NetworkBasic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC7F6812890DD74008047A6 /* Debug */,
@@ -416,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CC7F6832890DD74008047A6 /* Build configuration list for PBXNativeTarget "SeSac2LectureNetworkBasic" */ = {
+		8CC7F6832890DD74008047A6 /* Build configuration list for PBXNativeTarget "NetworkBasic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC7F6842890DD74008047A6 /* Debug */,
