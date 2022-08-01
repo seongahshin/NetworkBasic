@@ -22,7 +22,6 @@ class LottoViewController: UIViewController {
    
     @IBOutlet weak var bonusLabel: UILabel!
     
-    @IBOutlet var LabelSet: [UILabel]!
     
     @IBOutlet weak var numberTextField: UITextField!
 //    @IBOutlet weak var lottoPickerView: UIPickerView!

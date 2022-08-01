@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpg-ej-qGn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ctv-TB-TCj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -288,6 +288,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IQN-kK-T6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3186" y="72"/>
+        </scene>
+        <!--Beer View Controller-->
+        <scene sceneID="t1C-Wd-KNW">
+            <objects>
+                <viewController id="Ctv-TB-TCj" customClass="BeerViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHm-QL-jXm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqa-xz-Bdt">
+                                <rect key="frame" x="0.0" y="54" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ng9-1f-sYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-cT-qlT">
+                                <rect key="frame" x="20" y="134" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cyo-cT-qlT" secondAttribute="height" id="tev-OW-vME"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-yt-oJs">
+                                <rect key="frame" x="20" y="528" width="374" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WRc-yt-oJs" secondAttribute="height" multiplier="2:1" id="adW-Uw-riC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHS-fy-qLl">
+                                <rect key="frame" x="20" y="735" width="374" height="53"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aHS-fy-qLl" secondAttribute="height" multiplier="374:53" id="5lV-tO-qmM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="beerButtonClicked:" destination="Ctv-TB-TCj" eventType="touchUpInside" id="iLQ-B2-HmB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NVU-bw-4ae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WRc-yt-oJs" firstAttribute="top" secondItem="Cyo-cT-qlT" secondAttribute="bottom" constant="20" id="1SX-jZ-5H9"/>
+                            <constraint firstItem="dqa-xz-Bdt" firstAttribute="leading" secondItem="NVU-bw-4ae" secondAttribute="leading" id="BFn-8S-sky"/>
+                            <constraint firstItem="dqa-xz-Bdt" firstAttribute="top" secondItem="NVU-bw-4ae" secondAttribute="top" constant="10" id="Qp3-Wl-rVV"/>
+                            <constraint firstItem="NVU-bw-4ae" firstAttribute="trailing" secondItem="WRc-yt-oJs" secondAttribute="trailing" constant="20" id="Tvo-Nq-bxk"/>
+                            <constraint firstItem="Cyo-cT-qlT" firstAttribute="top" secondItem="dqa-xz-Bdt" secondAttribute="bottom" constant="20" id="YkI-v7-Ijg"/>
+                            <constraint firstItem="Cyo-cT-qlT" firstAttribute="leading" secondItem="NVU-bw-4ae" secondAttribute="leading" constant="20" id="Yym-7w-jue"/>
+                            <constraint firstItem="NVU-bw-4ae" firstAttribute="trailing" secondItem="Cyo-cT-qlT" secondAttribute="trailing" constant="20" id="c9b-Wp-L8c"/>
+                            <constraint firstItem="aHS-fy-qLl" firstAttribute="top" secondItem="WRc-yt-oJs" secondAttribute="bottom" constant="20" id="f0c-wT-977"/>
+                            <constraint firstItem="NVU-bw-4ae" firstAttribute="trailing" secondItem="aHS-fy-qLl" secondAttribute="trailing" constant="20" id="f9E-td-GWI"/>
+                            <constraint firstItem="NVU-bw-4ae" firstAttribute="trailing" secondItem="dqa-xz-Bdt" secondAttribute="trailing" id="fT5-ml-8qB"/>
+                            <constraint firstItem="aHS-fy-qLl" firstAttribute="leading" secondItem="NVU-bw-4ae" secondAttribute="leading" constant="20" id="kZP-iv-fvb"/>
+                            <constraint firstItem="WRc-yt-oJs" firstAttribute="leading" secondItem="NVU-bw-4ae" secondAttribute="leading" constant="20" id="m5Z-hM-nfO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerButton" destination="aHS-fy-qLl" id="cfw-Pa-HA8"/>
+                        <outlet property="beerDescription" destination="WRc-yt-oJs" id="u8B-mb-VMP"/>
+                        <outlet property="beerImage" destination="Cyo-cT-qlT" id="uUK-W0-zSC"/>
+                        <outlet property="titleLabel" destination="dqa-xz-Bdt" id="Faa-y6-3oI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTT-gc-CDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4024.6376811594205" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
