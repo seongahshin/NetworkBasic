@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rHH-AA-1Ll">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpg-ej-qGn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,7 +11,7 @@
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="SeSac2LectureNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
         <!--Lotto View Controller-->
         <scene sceneID="rwj-sO-KCO">
             <objects>
-                <viewController id="dpg-ej-qGn" customClass="LottoViewController" customModule="SeSac2LectureNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dpg-ej-qGn" customClass="LottoViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EVt-wb-n6c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bonusLabel" destination="xCg-Yj-JFG" id="9sq-As-0hO"/>
+                        <outlet property="fifthLabel" destination="U7Z-Yi-6ga" id="Chn-Mv-Fkg"/>
+                        <outlet property="firstLabel" destination="PNO-5Z-oif" id="BmW-gz-UyX"/>
+                        <outlet property="fourthLabel" destination="05b-C7-eLc" id="klN-Vj-HZU"/>
                         <outlet property="numberTextField" destination="mCt-p0-ni2" id="V4e-DL-ccn"/>
+                        <outlet property="secondLabel" destination="tJ5-Ln-7ET" id="wy5-Jq-aLT"/>
+                        <outlet property="sixthLabel" destination="2MD-0q-eUF" id="gAj-61-Bdo"/>
+                        <outlet property="thirdLabel" destination="VCw-Jv-B74" id="Ieq-Zp-XNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7B-Nk-AE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -133,7 +140,7 @@
         <!--Translate View Controller-->
         <scene sceneID="fd0-Yi-7hn">
             <objects>
-                <viewController id="NGe-cV-bC3" customClass="TranslateViewController" customModule="SeSac2LectureNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NGe-cV-bC3" customClass="TranslateViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWY-re-tm3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +184,7 @@
         <!--Web View Controller-->
         <scene sceneID="clO-Ke-fnC">
             <objects>
-                <viewController id="rHH-AA-1Ll" customClass="WebViewController" customModule="SeSac2LectureNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rHH-AA-1Ll" customClass="WebViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWN-pb-mMp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,6 +255,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynJ-hE-pbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2369.5652173913045" y="71.651785714285708"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="7pf-0o-Td2">
+            <objects>
+                <viewController id="2ms-6A-y3d" customClass="LocationViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oNC-Uh-N7H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-qz-TUV">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kHD-wn-gmg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Local Notifiction"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="2ms-6A-y3d" eventType="touchUpInside" id="g6y-95-20W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ms6-uP-Mu9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RfA-qz-TUV" firstAttribute="top" secondItem="Ms6-uP-Mu9" secondAttribute="top" constant="20" id="1Xs-FP-Aoz"/>
+                            <constraint firstItem="Ms6-uP-Mu9" firstAttribute="trailing" secondItem="RfA-qz-TUV" secondAttribute="trailing" constant="20" id="JLk-FF-1pG"/>
+                            <constraint firstItem="RfA-qz-TUV" firstAttribute="leading" secondItem="Ms6-uP-Mu9" secondAttribute="leading" constant="20" id="SKK-N6-fz1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQN-kK-T6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3186" y="72"/>
         </scene>
     </scenes>
     <resources>

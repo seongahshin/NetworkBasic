@@ -24,10 +24,10 @@ class ViewController: UIViewController {
     }
     static var identifier: String = "ViewController"
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UserDefaultsHelper.standard.nickname = "고래밥"
+        UserDefaultsHelper.standard.age = 1
     }
     
     func configureView() {

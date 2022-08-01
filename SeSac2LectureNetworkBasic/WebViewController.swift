@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController {
+    
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var webView: WKWebView!
@@ -18,6 +19,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        WebViewController.reuseIdentifier
         openWebPage(url: destinationURl)
         searchBar.delegate = self
     }
