@@ -7,6 +7,9 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 // UIButton, UITextField > Action
 // UITextView, UISearchBar, UIPickerView > X
 // UIControl > 상속받지 않아서
@@ -23,13 +26,42 @@ class TranslateViewController: UIViewController {
         userInputTextView.text = textViewPlaceholderText
         userInputTextView.textColor = .lightGray
         userInputTextView.font = UIFont(name: "ROKAF-Slab-Serif-Medium", size: 17)
+        requestTranslatedData()
+    }
+    
+    func requestTranslatedData() {
+        let url = EndPoint.translateURL
+        let header: HTTPHeaders = ["X-Naver-Client-Id": APIKey.NAVER_ID, "X-Naver-Client-Secret": APIKey.NAVER_SECRET]
         
+        let parameter = ["source": "ko", "target": "en", "text": "안녕하세요 저는 고래밥 과자를 좋아합니다."]
+        
+        AF.request(url, method: .post, parameters: parameter ,headers: header).validate(statusCode: 200...500).responseJSON { [self] response in
+            switch response.result {
+            case .success(let value):
+                
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                let statusCode = response.response?.statusCode ?? 500
+                
+                if statusCode == 200 {
+                    print(json["message"]["result"]["translatedText"])
+                } else {
+                    self.userInputTextView.text = json["errorMessage"].stringValue
+                }
+                
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     }
     
 
 
 
-}
+
 
 extension TranslateViewController: UITextViewDelegate {
     

@@ -21,7 +21,7 @@ class BeerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Design()
-        
+        requestRandomBeer()
     }
     
     func Design() {

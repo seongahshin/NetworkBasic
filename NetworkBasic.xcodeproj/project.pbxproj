@@ -18,6 +18,10 @@
 		8C8D0C9328935D4200A315DC /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D0C9228935D4200A315DC /* LocationViewController.swift */; };
 		8C8D0C96289384D500A315DC /* ROKAF Slab Serif Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D0C95289384D500A315DC /* ROKAF Slab Serif Medium.otf */; };
 		8C8D0C98289384F100A315DC /* ROKAF Slab Serif Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D0C97289384F100A315DC /* ROKAF Slab Serif Bold.otf */; };
+		8CABB3C42898BD2000F6CB32 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABB3C32898BD2000F6CB32 /* BoxOfficeModel.swift */; };
+		8CABB3C628991EA500F6CB32 /* BeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABB3C528991EA500F6CB32 /* BeerTableViewController.swift */; };
+		8CABB3C828991ECD00F6CB32 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABB3C728991ECD00F6CB32 /* BeerTableViewCell.swift */; };
+		8CABB3CA2899234B00F6CB32 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABB3C92899234B00F6CB32 /* BeerModel.swift */; };
 		8CC7F6732890DD72008047A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7F6722890DD72008047A6 /* AppDelegate.swift */; };
 		8CC7F6752890DD72008047A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7F6742890DD72008047A6 /* SceneDelegate.swift */; };
 		8CC7F6772890DD72008047A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7F6762890DD72008047A6 /* ViewController.swift */; };
@@ -48,6 +52,10 @@
 		8C8D0C9228935D4200A315DC /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		8C8D0C95289384D500A315DC /* ROKAF Slab Serif Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ROKAF Slab Serif Medium.otf"; sourceTree = "<group>"; };
 		8C8D0C97289384F100A315DC /* ROKAF Slab Serif Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ROKAF Slab Serif Bold.otf"; sourceTree = "<group>"; };
+		8CABB3C32898BD2000F6CB32 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
+		8CABB3C528991EA500F6CB32 /* BeerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewController.swift; sourceTree = "<group>"; };
+		8CABB3C728991ECD00F6CB32 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		8CABB3C92899234B00F6CB32 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		8CC7F66F2890DD72008047A6 /* NetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC7F6722890DD72008047A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC7F6742890DD72008047A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 				8CC7F67B2890DD74008047A6 /* Assets.xcassets */,
 				8CC7F67D2890DD74008047A6 /* LaunchScreen.storyboard */,
 				8CC7F6802890DD74008047A6 /* Info.plist */,
+				8CABB3C32898BD2000F6CB32 /* BoxOfficeModel.swift */,
 			);
 			path = SeSac2LectureNetworkBasic;
 			sourceTree = "<group>";
@@ -163,6 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				8CD1D0E72897C14A0047DA2A /* BeerViewController.swift */,
+				8CABB3C528991EA500F6CB32 /* BeerTableViewController.swift */,
+				8CABB3C728991ECD00F6CB32 /* BeerTableViewCell.swift */,
+				8CABB3C92899234B00F6CB32 /* BeerModel.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -263,12 +275,16 @@
 				8CC7F6772890DD72008047A6 /* ViewController.swift in Sources */,
 				8C8D0C8A28920CCD00A315DC /* ViewPresentableProtocol.swift in Sources */,
 				8CD1D0DD289757950047DA2A /* Constant.swift in Sources */,
+				8CABB3C828991ECD00F6CB32 /* BeerTableViewCell.swift in Sources */,
 				8CC7F6732890DD72008047A6 /* AppDelegate.swift in Sources */,
 				8CC7F6872890E1F7008047A6 /* SearchViewController.swift in Sources */,
+				8CABB3CA2899234B00F6CB32 /* BeerModel.swift in Sources */,
 				8C8D0C8328915D5D00A315DC /* PracticeViewController.swift in Sources */,
+				8CABB3C42898BD2000F6CB32 /* BoxOfficeModel.swift in Sources */,
 				8CC7F6752890DD72008047A6 /* SceneDelegate.swift in Sources */,
 				8CC7F68C2890E4CE008047A6 /* ListTableViewCell.swift in Sources */,
 				8CD1D0DA289752780047DA2A /* ReusableViewProtocol.swift in Sources */,
+				8CABB3C628991EA500F6CB32 /* BeerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
